@@ -1,5 +1,7 @@
+* {
+    font-family: 'Avant Garde', Gothic !important;
+}
 body {
-  font-family: 'Open Sans', sans-serif;
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-style: none;
@@ -13,7 +15,6 @@ a {
   text-decoration: none !important;
   display: inline-block;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
   background-color: transparent;
   padding: 0;
   color: #ffffff;
@@ -196,7 +197,7 @@ section.section {
  */
 .section-separator {
   display: block;
-  padding-top: 115px;
+  padding-top: 55px;
   padding-bottom: 115px;
 }
 .section-separator.sp-top {
@@ -919,14 +920,15 @@ section.section {
 }
 .main-navbar-top .navbar-header .navbar-brand img {
   display: block;
-  height: 100%;
+  height: 34px;
   max-width: initial;
+  margin-top: -3px;
 }
 .main-navbar-top .navbar-nav {
   margin: 0;
 }
 .main-navbar-top .navbar-nav li .btn-nav {
-  padding: 15px 13px;
+  padding: 0 13px;
   color: #ffffff;
   font-weight: 600;
   font-size: 14px;
@@ -949,6 +951,7 @@ section.section {
 .main-navbar-top .navbar-nav li .btn-nav .view-all-link-mask *,
 .main-navbar-top .navbar-nav li .btn-nav .view-all-link-mask .view-all-link-mask-text * {
   color: #feb960;
+      top: -7.5px;
 }
 .main-navbar-top .navbar-nav li .btn-nav:hover,
 .main-navbar-top .navbar-nav li .btn-nav:focus {
@@ -1204,7 +1207,7 @@ section.section {
  * ========================================
  */
 .bg-image-1 {
-  background: url('assets/images/background-1.jpg');
+ /* background: url('assets/images/background-1.jpg');*/
   -o-background-size: cover;
   -ms-background-size: cover;
   -moz-background-size: cover;
@@ -1213,7 +1216,7 @@ section.section {
   background-position: 50% 50%;
   background-attachment: initial;
   background-repeat: no-repeat;
-  background-color: #171717;
+  background-color: #fff;
 }
 .home-section .heading-outer {
   position: relative;
@@ -1483,12 +1486,12 @@ section.section {
   padding-top: 10px;
 }
 .services-section .each-services .each-services-inner .title {
-  font-family: 'Merriweather', serif;
   font-size: 30px;
   line-height: 65px;
   color: #ffffff;
   font-weight: 400;
   margin: 0px 0;
+  line-height: 32px;
 }
 .services-section .each-services .each-services-inner p:last-child {
   margin-bottom: 0;
@@ -1619,7 +1622,7 @@ section.section {
   text-align: center;
 }
 .image img {
-  width: 800px;
+  width: 100%;
 }
 /**
  * ========================================
@@ -1767,7 +1770,7 @@ section.section {
 .line {
   width: 1px;
   height: 115px;
-  background-color: #f7ac54;
+  background-color: #ffff00;
   position: relative;
 }
 .sub-heading-outer {
@@ -1890,6 +1893,7 @@ section.section {
 }
 .pagination-style-1 > .owl-controls {
   text-align: center;
+  display: none !important;
 }
 .pagination-style-1 > .owl-controls .owl-pagination {
   float: none;
@@ -4005,6 +4009,7 @@ section.section {
 }
 .main-preloader .full-height {
   height: 100%;
+  margin: auto;
 }
 .main-preloader .main-preloader-inner {
   position: relative;
@@ -4161,4 +4166,10 @@ section.section {
   -moz-transform: translate3d(0, -50%, 0);
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
+}
+.pera-outer p{
+  color: #00ffff;
+}
+.sub-heading.wow p{
+  color:#ffff00;
 }
