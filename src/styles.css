@@ -1,5 +1,10 @@
-* {
-    font-family: 'Avant Garde', Gothic !important;
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Avant-Garde';
+  src: url('./assets/fonts/avant-garde.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   color: rgba(255, 255, 255, 0.9);
@@ -92,7 +97,6 @@ a:focus {
   left: 0;
 }
 p {
-  font-family: 'Open Sans', sans-serif;
   color: #9c9c9c;
   font-size: 14px;
   margin-bottom: 27px;
@@ -100,37 +104,31 @@ p {
 }
 /* Heading Style */
 h1 {
-  font-family: 'Merriweather', serif;
   font-size: 55px;
   line-height: 90px;
   font-weight: 400;
 }
 h2 {
-  font-family: 'Merriweather', serif;
   font-size: 40px;
   line-height: 65px;
   font-weight: 400;
 }
 h3 {
-  font-family: 'Merriweather', serif;
   font-size: 30px;
   line-height: 65px;
   font-weight: 400;
 }
 h4 {
-  font-family: 'Merriweather', serif;
   font-size: 22px;
   line-height: 40px;
   font-weight: 400;
 }
 h5 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   line-height: 38px;
   font-weight: 600;
 }
 h6 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   line-height: 34px;
   font-weight: 600;
@@ -146,7 +144,6 @@ h6 {
  * ====================================
  */
 .section-heading {
-  font-family: 'Merriweather', serif;
   color: #ffffff;
   display: inline-block;
   padding-bottom: 0px;
@@ -156,7 +153,6 @@ h6 {
   font-weight: 400;
 }
 .sub-heading {
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 600;
@@ -264,7 +260,6 @@ section.section {
  * ===============================
  */
 .btn {
-  font-family: 'Open Sans', sans-serif;
   -o-border-radius: 0 0 0 0 ;
   -ms-border-radius: 0 0 0 0 ;
   -moz-border-radius: 0 0 0 0 ;
@@ -1560,7 +1555,6 @@ section.section {
   transform: translate3d(-100%, 13px, 0);
 }
 .services-full-view .services-details .section-title {
-  font-family: 'Merriweather', serif;
   background-color: #ffffff;
   color: #282828;
   padding: 5px 30px;
@@ -1735,7 +1729,6 @@ section.section {
   height: 100px;
 }
 .project-detail .heading {
-  font-family: 'Merriweather', serif;
   margin-top: 0px;
 }
 .project-detail .list li {
@@ -1786,7 +1779,6 @@ section.section {
   text-align: left;
 }
 .heading-text .text {
-  font-family: 'Merriweather', serif;
   font-size: 55px;
   line-height: 65px;
   font-weight: 400;
@@ -4094,7 +4086,6 @@ section.section {
 #fp-nav ul li .fp-tooltip {
   left: 0 !important;
   top: 3px !important;
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
