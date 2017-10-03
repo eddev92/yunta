@@ -113,7 +113,8 @@
   .home-section .heading-outer .p-l-40,
   .home-section .heading-outer .p-r-40,
   .home-section .heading-outer .p-b-40 {
-    padding: 15px;
+    padding: 31px;
+        height: 210px;
   }
   /**
 	 * ========================================
@@ -240,5 +241,13 @@
   }
   .contact-footer .each-section:last-child .each-section-inner {
     margin-bottom: 0px;
+  }
+}
+@media (min-width: 320) and (max-width: 574px) {
+  ul#ul-sections li a {
+        font-size: 10px;
+  }
+    a.navbar-brand .light-logo .btn-scroll {
+        margin-right: 0;
   }
 }
