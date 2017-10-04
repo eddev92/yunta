@@ -1,0 +1,97 @@
+#testimonial-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#testimonial-section .card img{
+      height: 150px;
+}
+#testimonial-section .card p, #testimonial-section .card h4{
+  color: #00ffff;
+}
+#testimonial-section .card h4{
+    font-weight: bold;  
+    color: black;
+}
+#testimonial-section .cardInfo{
+      box-shadow: 4px 4px 0 0 rgba(0,0,0,.1);
+    padding: 0;
+}
+/*
+.testimonial-section .testimonial-wrapper {
+  margin-top: 55px;
+}
+.testimonial-section .testimonial-wrapper .owl-wrapper-outer {
+  -o-box-shadow: 2px 4.33px 25px 0px rgba(0, 0, 0, 0.25) ;
+  -ms-box-shadow: 2px 4.33px 25px 0px rgba(0, 0, 0, 0.25) ;
+  -moz-box-shadow: 2px 4.33px 25px 0px rgba(0, 0, 0, 0.25) ;
+  -webkit-box-shadow: 2px 4.33px 25px 0px rgba(0, 0, 0, 0.25) ;
+  box-shadow: 2px 4.33px 25px 0px rgba(0, 0, 0, 0.25) ;
+}
+.testimonial-section .testimonial-wrapper .owl-wrapper-outer .owl-wrapper {
+  background-color: #171717;
+}
+.testimonial-section .testimonial-wrapper .owl-item {
+  background-color: #171717;
+}
+.testimonial-section .testimonial-wrapper .item {
+  padding: 0 80px;
+}
+.testimonial-section .testimonial-wrapper .item .image-outer img {
+  width: 80px;
+  height: auto;
+}
+.testimonial-section .testimonial-wrapper .item blockquote {
+  border: 0px solid;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #BBBBBB;
+}
+.testimonial-section .testimonial-wrapper .item .profile-outer {
+  display: inline-block;
+  background-color: #171717;
+  padding: 0 40px;
+}
+.testimonial-section .testimonial-wrapper .item .profile-outer::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.18);
+  left: 110px;
+  right: 110px;
+  margin-top: 13px;
+  z-index: -1;
+}
+.testimonial-section .testimonial-wrapper .item .profile-outer span {
+  display: block;
+  line-height: 35px;
+}
+.testimonial-section .testimonial-wrapper .item .profile-outer .name {
+  color: #f7ac54;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.testimonial-section .testimonial-wrapper .item .profile-outer .position {
+  font-size: 13px;
+  color: #ffffff;
+}
+.pagination-style-1 > .owl-controls {
+    text-align: center;
+        display: none !important;
+    right: 20%;
+    margin-top: -170px;
+    position: absolute;
+}
+.pagination-style-1 > .owl-controls .owl-pagination {
+  float: none;
+  background-color: white;
+    opacity: 0.6;
+    border-radius: 40%;
+}
+.pagination-style-1 > .owl-controls .owl-pagination .owl-page {
+  float: left;
+  width: 15px;
+ margin: 20px 5px 16px 5px;
+}*/
