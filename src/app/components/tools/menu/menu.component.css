@@ -12,7 +12,8 @@
       font-size: 11px;
 }
 .nav li a:hover {
-  background-color: transparent;
+  background-color: black;
+  border-radius: 100%;
 }
 .fix {
   overflow: hidden;
@@ -51,15 +52,6 @@ p {
 a.btn-nav{
   margin: 0 4px;
 }
-/*#main-navbar-top{
-  width: 45%;
-}*/
-/*media queries*/
-/*@media (min-width: 830px){
-  #main-navbar-top{
-    width: 60%;
-  }
-}*/
 @media (min-width: 320) and (max-width: 574px) {
   .navbar-header a {
         margin-right: 0;

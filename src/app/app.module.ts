@@ -7,6 +7,7 @@ import { FooterComponent } from './components/tools/footer/footer.component';
 import { TableComponent } from './components/tools/table/table.component';
 import { PreloaderComponent } from './components/tools/preloader/preloader.component';
 import { OurServicesComponent } from './components/tools/our-services/our-services.component';
+import { PortafolioComponent } from './components/tools/portafolio/portafolio.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { OurServicesComponent } from './components/tools/our-services/our-servic
     FooterComponent,
     TableComponent,
     PreloaderComponent,
-    OurServicesComponent
+    OurServicesComponent,
+    PortafolioComponent
   ],
   imports: [
     BrowserModule
