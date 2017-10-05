@@ -3,10 +3,11 @@
   margin-bottom: 100px;
 }
 #testimonial-section .card img{
-      height: 150px;
+      height: 160px;
 }
 #testimonial-section .card p, #testimonial-section .card h4{
   color: #00ffff;
+      font-weight: bold;
 }
 #testimonial-section .card h4{
     font-weight: bold;  
@@ -14,7 +15,9 @@
 }
 #testimonial-section .cardInfo{
       box-shadow: 4px 4px 0 0 rgba(0,0,0,.1);
-    padding: 0;
+}
+ul.list-group{
+  color:black;
 }
 /*
 .testimonial-section .testimonial-wrapper {
