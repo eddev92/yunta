@@ -411,9 +411,9 @@
           projectDetailId.addClass('active-section');
         }
 
-      }, 600 );
+      }, 300 );
 
-      imageId.fadeOut(600);
+      imageId.fadeOut(300);
     });
 
 
@@ -437,8 +437,8 @@
       projectDetailId.removeClass('active-section');
       
       setTimeout(function() {
-        imageId.fadeIn(600);
-        sliderId.fadeOut(100);
+        imageId.fadeIn(300);
+        sliderId.fadeOut(200);
         projectDetailId.fadeOut(100);
         mainSectionId.find( dataHeading ).removeClass('no-heading');
         sliderId.closest('.slider-outer').css( 'z-index', -111 );
@@ -553,7 +553,20 @@
     });
 
 
+/**
+ * 
+ */
 
+
+
+ 
+  
+
+
+
+/*
+*
+ */
 
 
     /**

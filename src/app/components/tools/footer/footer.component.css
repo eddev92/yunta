@@ -1,12 +1,18 @@
 .footer-parrafo{
-	text-align: center;
-	padding: 17px;
-	color: #00ffff;
+/*	    text-align: left;*/
+    padding-bottom: 20px;
+    color: #00ffff;
+    padding-top: 15px;
 }
 .footer-parrafo h4{
 	font-size: 16px;
+
 }
 .footer-parrafo img{
 	width: auto;
     height: 24px;
+}
+.sub-p{
+	width: 234px;
+	    margin: auto;
 }

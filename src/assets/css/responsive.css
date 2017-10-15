@@ -25,6 +25,9 @@
   }
 }
 @media (max-width: 991px) {
+  .carousel{
+    padding-top: 100px;
+  }
   /**
 	 * =======================
 	 * Top Navigation

@@ -6,6 +6,9 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  font-family: 'Avant-Garde' !important;
+}
 body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
@@ -127,7 +130,7 @@ h6 {
 .overlay-color::before {
   content: '';
   position: absolute;
-  background-color: rgba(32, 32, 32, 0.8);
+  background-color: rgba(32, 32, 32, 0.5);
   width: 100%;
   height: 100%;
   left: 0;
@@ -799,7 +802,7 @@ h6 {
   background-color: #202020;
 }
 .dark-background {
-  background-color: #e5e5e5;
+  background-color: #202020;
 }
 /**
  * =======================

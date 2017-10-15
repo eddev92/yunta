@@ -4,7 +4,7 @@
  * ========================================
  */
 .services-section {
-  min-height: 650px;
+  min-height: 545px;
 }
 .services-section .each-services .each-services-inner {
   padding: 0;
@@ -972,4 +972,8 @@ section.section {
     width: 2px;
     background-color: #ffff00;
     margin: auto;
+}
+.pera-outer p{
+  text-align: justify;
+  font-size: 18px;
 }
