@@ -1,0 +1,19 @@
+#buttonModal{
+	position: fixed;
+    width: auto;
+    height: 6%;
+    padding: 0 15px;
+    bottom: 21px;
+    border-radius: 15px;
+    right: 0;
+}
+label, .modal-header h5{
+	color: black;
+}
+/*.modal.show .modal-dialog{
+	top: 20%;
+}*/
+button.btn-primary{
+	padding: 0px 15px;
+    border-radius: 13px;
+}

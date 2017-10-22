@@ -1,4 +1,7 @@
 <preloader></preloader>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="buttonModal">
+    Informate
+</button>
 <menu style="margin: 0;"></menu>
 
         <div class="section section-item home-section overflow hide-overlay overlay-color bg-image-1 wow" id="home-section">
@@ -26,6 +29,43 @@
                     </div>
                 </div>
             </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contactos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" >
+                            <form #formContact="ngForm" (ngSubmit)="sendEmail(formContact)">
+                                <div class="form-input">
+                                    <label>Nombre y apellidos</label>
+                                    <input name="name" type="text" id="form-name" class="form-control" ngModel>
+                                </div>
+                                <div class="form-input">
+                                    <label>Email</label>
+                                    <input name="email" type="mail" id="form-name" class="form-control" ngModel>
+                                </div>
+                                <div class="form-input">
+                                    <label>Teléfono</label>
+                                    <input name="telefono" type="tel" id="form-name" class="form-control" ngModel>
+                                </div>
+                                <div class="form-input">
+                                    <label>Mensaje</label>
+                                    <input name="mensaje" type="textarea" id="form-name" class="form-control" ngModel>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                <button type="button" class="btn btn-primary" (click)="sendEmail(formContact)">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
 
 <our-services id="main-services"></our-services>

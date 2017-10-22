@@ -4,6 +4,7 @@
 }
 #testimonial-section .card img{
       height: 160px;
+      width: 100%;
 }
 #testimonial-section .card p, #testimonial-section .card h4{
   color: #00ffff;

@@ -1,0 +1,17 @@
+[
+	{
+	"title": "Medios digitales",
+	"subtitle": "Potencia tu negocio en Facebook u otras redes sociales",
+	"imgSrc": "assets/images/seo-face.png"
+	},
+	{
+	"title": "Desarrollo web",
+	"subtitle": "Potencia tu negocio en Facebook u otras redes sociales",
+	"imgSrc": "assets/images/web.jpg"
+	},
+	{
+	"title": "Videos online",
+	"subtitle": "¡Posiciona tu negocio con los medios audiovisuales!",
+	"imgSrc": "assets/images/video.png"
+	}
+]
