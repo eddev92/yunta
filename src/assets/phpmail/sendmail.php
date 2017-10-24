@@ -4,16 +4,18 @@ $postdata = file_get_contents("php://input");
 	$request = json_decode($postdata);
  
 	$email = $request->email;
+	$telefono = $request->telefono;
 	$mensaje = $request->mensaje;
 	$name = $request->name;
  
-	$to_email = "llanca872@gmail.com";
+	$to_email = "contactos@3vu.pe";
  
 	$contact = "<p><strong>Name:</strong> $name</p>
 				<p><strong>Email:</strong> $email</p>";
-	$content = "<p><strong>Mensaje:</strong> $mensaje</p>";
+	$content = "<p><strong>Telefono:</strong> $telefono</p>
+				<p><strong>Mensaje:</strong> $mensaje</p>";
  
-	$email_subject = "Enviado desde la web";
+	$email_subject = "Enviado desde la web 3vu";
  
 	$email_body = '<html><body>';
 	$email_body .= "$contact $content";
