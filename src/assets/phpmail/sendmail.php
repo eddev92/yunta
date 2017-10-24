@@ -1,42 +1,36 @@
 <?php
-// Variables
-$email = trim($_POST['email']);
-$mensaje = trim($_POST['mensaje']);
-$name = trim($_POST['name']);
-$telefono = trim($_POST['telefono']);
 
-
-if( isset($name) && isset($email) ) {
-
-	// Avoid Email Injection and Mail Form Script Hijacking
-	// $pattern = "/(content-type|bcc:|cc:|to:)/i";
-	// if( preg_match($pattern, $name) || preg_match($pattern, $email) || preg_match($pattern, $mensaje) ) {
-	// 	exit;
-	// }
-
-	// Email will be send
-	$to = "llanca872@gmail.com"; // Change with your email address
-	$sub = "Desde la web 3vu"; // You can define email subject
-	// HTML Elements for Email Body
-	$body = <<<EOD
-	<strong>Name:</strong>$name<br>
-	<strong>Email:</strong> <a href="mailto:$email?subject=feedback" "email me">$email</a> <br> <br>
-	<strong>Telefono:</strong> $telefono <br>
-	<strong>Mensaje:</strong> $mensaje <br>
-	
-EOD;
-//Must end on first column
-	
-
-$headers = "From: " . strip_tags($_POST['$email']) . "\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-
-$message = '<p><strong>This is strong text</strong> while this is not.</p>';
-
-	// PHP email sender
-	mail($to, $sub, $body, $headers);
-}
-
+$postdata = file_get_contents("php://input");
+	$request = json_decode($postdata);
+ 
+	$email = $request->email;
+	$mensaje = $request->mensaje;
+	$name = $request->name;
+ 
+	$to_email = "llanca872@gmail.com";
+ 
+	$contact = "<p><strong>Name:</strong> $name</p>
+				<p><strong>Email:</strong> $email</p>";
+	$content = "<p><strong>Mensaje:</strong> $mensaje</p>";
+ 
+	$email_subject = "Enviado desde la web";
+ 
+	$email_body = '<html><body>';
+	$email_body .= "$contact $content";
+	$email_body .= '</body></html>';
+ 
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers .= "From: $email\n";
+	$headers .= "Reply-To: $email";
+ 
+	mail($to_email,$email_subject,$email_body,$headers);
+ 
+	$response_array['status'] = 'success';
+	$response_array['from'] = $email;
+	echo json_encode($response_array);
+	echo json_encode($email);
+	header($response_array);
+	return $email;
 
 ?>

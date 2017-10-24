@@ -14,7 +14,7 @@ export interface IMessage {
 
 @Injectable()
 export class AppService {
-  private emailUrl = 'assets/phpmail/sendmail.php';
+  emailUrl = 'assets/phpmail/sendmail.php';
 
   constructor(private http: Http) {
 
@@ -22,7 +22,7 @@ export class AppService {
 
   sendEmail(message: any): Observable<any> | any {
     console.log(message)
-    return this.http.post(this.emailUrl, message.name)
+    return this.http.post(this.emailUrl, message)
       .map(response => {
         console.log('Sending email was successfull', response);
         return response;
